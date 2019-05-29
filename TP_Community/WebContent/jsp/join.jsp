@@ -48,7 +48,7 @@
 					</div>
 					
 					<div class="btn">
-						<input type= "button" value = "회원가입완료">
+						<a href = "../jsp/first_page.jsp"><input type= "button" value = "회원가입완료"></a>
 					</div>
 					
 				</div>
