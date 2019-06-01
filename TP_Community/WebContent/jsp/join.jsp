@@ -3,9 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1">
+<link rel="stylesheet" href="..css/booststrap.css">
+<link rel="stylesheet" href="../css/login.css"/>
 <title>JoinPage</title>
-<link rel="stylesheet" href="../css/join.css"/>
 </head>
 <body>
 	<div class="bg">
@@ -18,37 +20,39 @@
 					<div class="join">
 				
 					<h1>JOIN</h1>
-					
-					
-					<div class="id">
-						<input type="text" id="userid" name="userid" value="아이디">
-					</div>
-					
-					<div class="pw">
-						<input type="text" id="userpw" name="userpw" value="비밀번호">
-					</div>
-					
-					<div class="email">
-						<input type="text" id="email" name="email" value="email">
-					</div>
-					
-					<div class="selectGender">
-						<select>
-							<option>성별을 선택해주세요.</option>
-							<option>남</option>
-							<option>여</option>
-						</select>
-					</div>
-					
-					
-					<div class="selectWrap">
-						<select>
-							<option>클래스</option>
-						</select>
-					</div>
-					
-					<div class="btn">
-						<a href = "../jsp/first_page.jsp"><input type= "button" value = "회원가입완료"></a>
+					<div class = "jumbotron" style="padding-top: 20px;">
+					<form method ="post" action="joinAction.jsp">
+						<div class="id">
+							<input type="text" class ="form-control" placeholder="아이디" id="user_id" name="user_id" maxlength ="20">
+						</div>
+						
+						<div class="pw">
+							<input type="password" class ="form-control" placeholder="비밀번호" id="user_pass" name="user_pass" maxlength ="20">
+						</div>
+						<div class="pw">
+							<input type="password" class ="form-control" placeholder="비밀번호 확인" id="user_pass2" name="user_pass2" maxlength ="20">
+						</div>
+						
+						<div class="pw">
+							<input type="text" class ="form-control" placeholder="이름" id="user_name" name="user_name" maxlength ="20">
+						</div>
+						<div class="pw">
+							<input type="email" class ="form-control" placeholder="이메일" id="user_email" name="user_email" maxlength ="50">
+						</div>
+						
+						<div>
+							남자 <input type="radio" name="user_gen" value="남자" checked="checked">
+	    					여자 <input type="radio" name="user_gen" value="여자" > <p>
+						</div>
+																
+						<div class="pw">
+							<input type="text" class ="form-control" placeholder="수업명" id="user_class" name="user_class" maxlength ="50">
+						</div>
+						
+						<div class="btn">
+							<input type="submit" class="btn btn-primary form-control" value="가입"></a>
+						</div>
+					</form>
 					</div>
 					
 				</div>

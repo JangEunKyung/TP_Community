@@ -1,23 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %> <!-- 자바 클래스 사용 -->
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Community</title>
-<link rel="stylesheet" href="../css/main.css"/>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
 </head>
 <body>
-<div class = "outer">
-	<div class = "top">
-	
-		<div class = "logo"></div>
-		<div class = "menu"></div>
-	</div>
-	
-	<div class = "main"></div>
-</div>	
-
-	
+	<%
+		String user_id = (String)session.getAttribute("user_id");
+		
+	%>
+	<div> <%=user_id%> 
 </body>
 </html>
