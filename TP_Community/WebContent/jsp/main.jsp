@@ -12,6 +12,6 @@
 		String user_id = (String)session.getAttribute("user_id");
 		
 	%>
-	<div> <%=user_id%> 
+	<div> <%=user_id%> </div>
 </body>
 </html>
